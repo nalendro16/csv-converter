@@ -1,6 +1,6 @@
 //========= class
 
-type Base = 'thick' | 'thin' | 'bold'
+type Base = 'thick' | 'thin' | 'bold' | 'classic'
 
 class Pizza {
   constructor(titl: string, pric: number) {
@@ -10,15 +10,15 @@ class Pizza {
 
   title: string
   price: number
-  base: Base
+  base: Base = 'thin'
   toppings: string[] = []
 
   addTopping(topping: string) {
     this.toppings.push(topping)
   }
 
-  addBase(base: Base) {
-    this.base = base
+  addBase(b: Base) {
+    this.base = b
   }
 }
 
