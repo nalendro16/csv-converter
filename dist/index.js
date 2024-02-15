@@ -2,15 +2,20 @@
 //========= class
 class Pizza {
     constructor(titl, pric) {
+        this.titl = titl;
+        this.pric = pric;
+        // title: string
+        // price: number
+        this.base = 'thin';
         this.toppings = [];
-        this.title = titl;
-        this.price = pric;
+        // this.title = titl
+        // this.price = pric
     }
     addTopping(topping) {
         this.toppings.push(topping);
     }
-    addBase(base) {
-        this.base = base;
+    addBase(b) {
+        this.base = b;
     }
 }
 const pizza = new Pizza('me hombre american', 90000);

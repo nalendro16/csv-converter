@@ -3,13 +3,13 @@
 type Base = 'thick' | 'thin' | 'bold' | 'classic'
 
 class Pizza {
-  constructor(titl: string, pric: number) {
-    this.title = titl
-    this.price = pric
+  constructor(private titl: string, private pric: number) {
+    // this.title = titl
+    // this.price = pric
   }
 
-  title: string
-  price: number
+  // title: string
+  // price: number
   base: Base = 'thin'
   toppings: string[] = []
 
