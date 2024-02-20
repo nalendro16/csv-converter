@@ -3,13 +3,8 @@
 type Base = 'thick' | 'thin' | 'bold' | 'classic'
 
 class Pizza {
-  constructor(private titl: string, private pric: number) {
-    // this.title = titl
-    // this.price = pric
-  }
+  constructor(private titl: string, private pric: number) {}
 
-  // title: string
-  // price: number
   base: Base = 'thin'
   toppings: string[] = []
 
@@ -27,4 +22,6 @@ const pizza = new Pizza('me hombre american', 90000)
 pizza.addTopping('olive')
 pizza.addBase('bold')
 
-console.log(pizza)
+pizza.base
+
+// console.log(pizza)
